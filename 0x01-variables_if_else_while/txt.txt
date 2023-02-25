@@ -1,0 +1,14 @@
+========== 2-print_alphabet.c ==========
+2-print_alphabet.c:11: WARNING: please, no spaces at the start of a line
+2-print_alphabet.c:13: WARNING: please, no spaces at the start of a line
+2-print_alphabet.c:14: WARNING: please, no spaces at the start of a line
+2-print_alphabet.c:15: ERROR: code indent should use tabs where possible
+2-print_alphabet.c:15: WARNING: please, no spaces at the start of a line
+2-print_alphabet.c:16: WARNING: please, no spaces at the start of a line
+2-print_alphabet.c:17: WARNING: please, no spaces at the start of a line
+2-print_alphabet.c:18: WARNING: please, no spaces at the start of a line
+2-print_alphabet.c:20: ERROR: trailing whitespace
+2-print_alphabet.c:20: WARNING: adding a line without newline at end of file
+2-print_alphabet.c:20: WARNING: please, no spaces at the start of a line
+total: 2 errors, 9 warnings, 20 lines checked
+main
