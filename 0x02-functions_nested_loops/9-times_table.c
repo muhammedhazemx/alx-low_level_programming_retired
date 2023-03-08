@@ -26,10 +26,10 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(product + '0');
 				/**
-				* we add '0 as it's the value is 48 in
-				* Decimal so 48 + 1 = 49 which is
-				*the value of 1 in ASCII etc..
-				*/
+				 * we add '0 as it's the value is 48 in
+				 * Decimal so 48 + 1 = 49 which is
+				 *the value of 1 in ASCII etc..
+				 */
 			}
 			else
 			{
@@ -39,5 +39,6 @@ void times_table(void)
 				_putchar(product % 10 + '0'); /* we use the % to get the 2nd digit*/
 			}
 		}
+		_putchar('\n');
 	}
 }
