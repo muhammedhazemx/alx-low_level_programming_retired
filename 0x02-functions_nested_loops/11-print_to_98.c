@@ -13,7 +13,20 @@ void print_to_98(int n)
 	{
 		for (; n < 98; n++)
 		{
-			if (n < 0)
+			if (n <= -100)
+			{
+				_putchar('-');
+				_putchar(n /100 + '0');
+				_putchar((n / 10) % 10 + '0');
+				_putchar(n % 10 + '0');
+			}
+			else if (n <= -10)
+			{
+				_putchar('-');
+				_putchar(n / -10 + '0');
+				_putchar(n % 10 * -1 + '0');
+			}
+			else if (n < 0)
 			{
 				_putchar('-');
 				_putchar(n / -10 + '0');
