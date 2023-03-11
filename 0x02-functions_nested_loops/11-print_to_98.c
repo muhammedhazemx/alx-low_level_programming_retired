@@ -23,6 +23,10 @@ void print_to_98(int n)
 			{
 				_putchar('0');
 			}
+			else if (n < 10)
+			{
+				_putchar(n + '0');
+			}
 			else
 			{
 				_putchar(n / 10 + '0');
