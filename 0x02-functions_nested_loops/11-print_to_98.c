@@ -6,6 +6,7 @@
  *
  * Return: void
  */
+
 void print_to_98(int n)
 {
 	if (n <= 98)
@@ -15,16 +16,21 @@ void print_to_98(int n)
 			if (n < 0)
 			{
 				_putchar('-');
-				n *= -1; /* Convert n to positive */
+				_putchar(n / -10 + '0');
+				_putchar(n % 10 * -1 + '0');
 			}
-			if (n < 10)
+			else if (n == 0)
+			{
+				_putchar('0');
+			}
+			else if (n < 10)
 			{
 				_putchar(n + '0');
 			}
 			else
 			{
-				print_to_98(n / 10); /* Recursively print the tens digit */
-				print_to_98(n % 10); /* Recursively print the ones digit */
+				_putchar(n / 10 + '0');
+				_putchar(n % 10 + '0');
 			}
 			_putchar(',');
 			_putchar(' ');
@@ -34,32 +40,13 @@ void print_to_98(int n)
 	{
 		for (; n > 98; n--)
 		{
-			if (n < 0)
-			{
-				_putchar('-');
-				n *= -1; /* Convert n to positive */
-			}
-			if (n < 10)
-			{
-				_putchar(n + '0');
-			}
-			else
-			{
-				print_to_98(n / 10); /* Recursively print the tens digit */
-				print_to_98(n % 10); /* Recursively print the ones digit */
-			}
+			_putchar(n / 10 + '0');
+			_putchar(n % 10 + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
 	}
-	if (n < 10)
-	{
-		_putchar(n + '0');
-	}
-	else
-	{
-		print_to_98(n / 10); /* Recursively print the tens digit */
-		print_to_98(n % 10); /* Recursively print the ones digit */
-	}
+	_putchar('9');
+	_putchar('8');
 	_putchar('\n');
 }
