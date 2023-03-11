@@ -40,10 +40,17 @@ void print_to_98(int n)
 	{
 		for (; n > 98; n--)
 		{
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
+			if (n >= 100)
+			{
+				_putchar(n /100 + '0');
+				_putchar((n / 10) % 10 + '0');
+				_putchar(n % 10 + '0');
+			}
+			else
+			{
+				_putchar(n /10 + '0');
+				_putchar(n % 10 + '0');
+			}
 		}
 	}
 	_putchar('9');
