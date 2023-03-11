@@ -6,72 +6,25 @@
  *
  * Return: void
  */
+
 void print_to_98(int n)
 {
-	if (n <= 98)
+	if (n < 98)
 	{
 		for (; n < 98; n++)
 		{
-			if (n <= -1000)
-			{
-				_putchar('-');
-				_putchar((n / 1000) * -1 + '0');
-				_putchar(((n / 100) % 10) * -1 + '0');
-				_putchar(((n / 10) % 10) * -1 + '0');
-				_putchar((n % 10) * -1 + '0');
-			}
-			else if (n <= -100)
-			{
-				_putchar('-');
-				_putchar((n / 100) * -1 + '0');
-				_putchar(((n / 10) % 10) * -1 + '0');
-				_putchar((n % 10) * -1 + '0');
-			}
-			else if (n <= -10)
-			{
-				_putchar('-');
-				_putchar((n / 10) * -1 + '0');
-				_putchar((n % 10) * -1 + '0');
-			}
-			else if (n < 0)
-			{
-				_putchar('-');
-				_putchar(n * -1 + '0');
-			}
-			else if (n == 0)
-			{
-				_putchar('0');
-			}
-			else if (n < 10)
-			{
-				_putchar(n + '0');
-			}
-			else
-			{
-				_putchar(n / 10 + '0');
-				_putchar(n % 10 + '0');
-			}
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			printf("%d, ", n);
+		}
+	}
+	else if (n > 98)
+	{
+		for (; n > 98; n--)
+		{
+			printf("%d, ", n);
 		}
 	}
 	else
 	{
-		for (; n > 98; n--)
-		{
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
+		printf("%d", n);
 	}
-	_putchar('9');
-	_putchar('8');
-	_putchar('\n');
 }
