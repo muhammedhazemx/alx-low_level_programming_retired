@@ -21,6 +21,6 @@ int main(void)
 			div = 1;
 		}
 	}
-	printf("%ld is the largest prime factor of 612852475143 \n", maxPrime);
+	printf("%ld\n", maxPrime);
 	return (0);
 }
