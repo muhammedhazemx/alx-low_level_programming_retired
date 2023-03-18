@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-	unsigned int num; 
+	unsigned int num;
 
 	if (n < 0)
 	{
@@ -20,7 +20,7 @@ void print_number(int n)
 	{
 		num = n;
 	}
-	if (num /10)
+	if (num / 10)
 	{
 		print_number(num / 10);
 	}
